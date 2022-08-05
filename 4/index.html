@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Buen dia!!!</h1>
+    <p>Ingrese las letras 'S' o 'N'</p>
+    <input type="text" name="" id="letra">
+    <button onclick="letra()">Ingresar</button>
+
+    <script>
+
+        var letra = function(){
+
+            var letra = document.getElementById("letra").value;
+            
+            if(letra == "N" || letra == "S"){
+
+                alert("Correcto");
+
+            }
+            else{
+
+                alert("Incorrecto");
+
+            }
+
+        }
+
+
+    </script>
+    
+</body>
+</html>

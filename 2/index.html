@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Buen dia!!</h1>
+
+    <p>El radio de el circulo es: </p>
+    <input type="number" id="radio">
+    <button onclick="sacarRadioPerimetro()">Ingresar</button>
+
+    <script>
+
+        var sacarRadioPerimetro = function () {
+
+            var radio = document.getElementById("radio").value;
+
+            alert("El radio es: "+document.getElementById("radio").value);
+
+            var area = Math.PI * (radio*radio);
+
+            alert("area: " + area);
+
+            perimetro(radio);
+
+        }
+
+        var perimetro = function (radio) {
+
+            var perimetro = 2 * Math.PI * radio;
+
+            alert("perimetro: " + perimetro);
+
+        }
+
+    </script>
+
+</body>
+
+</html>
