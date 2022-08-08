@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>BUEN DIA!!!</h1>
+    <p>Radio:</p>
+    <input type="number" id="radio">
+
+    <button onclick="CrearCirculo()">Ingresar</button>
+
+    <script>
+
+        function CrearCirculo() {
+
+            var radio = parseInt(document.getElementById("radio").value);
+
+            var circulo = {
+
+                getCirculo: function () {
+
+                    return "Radio: " + this.radio + 
+                    "Perimetro: " + 2*Math.PI * (this.radio) +
+                     "Area: " + Math.PI*(this.radio*this.radio);
+
+                },
+
+                setCirculo: function (radio) {
+
+                    this.radio = radio;
+
+
+                }
+
+            }
+
+            console.log(circulo);
+            libro.setLibro(radio);
+            alert(circulo.getCirculo);
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
