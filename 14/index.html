@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>BUEN DIA!!!</h1>
+    <p>ISBN:</p>
+    <input type="text" id="isbn">
+    <p>Titulo:</p>
+    <input type="number" id="titulo">
+    <p>Autor:</p>
+    <input type="text" id="autor">
+    <p>Numero de Paginas:</p>
+    <input type="text" id="numPagina">
+
+    <button onclick="CrearLibro()">Ingresar</button>
+
+    <script>
+
+        function CrearPersona() {
+
+            var isbn = document.getElementById("isbn").value;
+            var titulo = document.getElementById("titulo").value;
+            var autor = document.getElementById("autor").value;
+            var numPagina = document.getElementById("numPagina").value;
+
+            var libro = {
+
+                isbn: isbn,
+                titulo: titulo,
+                autor: autor,
+                numPagina: numPagina,
+
+            }
+
+            console.log(libro);
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

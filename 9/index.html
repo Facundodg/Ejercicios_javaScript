@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>BUEN DIA!!!</h1>
+    <p>Ingrese una Frace:</p>
+    <input type="text" id="palabra">
+    <button onclick="ingresoLetra()">Ingresar</button>
+
+    <script>
+
+        var ingresoLetra = function(){
+
+            var palabra = document.getElementById("palabra").value;
+            var letra;
+            var palabraNueva = "";
+
+            for(i=0;i<=palabra.length; i++){
+
+                letra = palabra.substring(i,i+1);
+                palabraNueva = palabraNueva + " " +letra;
+
+            }
+
+            alert(palabraNueva);
+
+        }
+
+
+
+    </script>
+    
+</body>
+
+</html>

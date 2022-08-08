@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1>BUEN DIA!!!</h1>
+    <p>Ingrese una Frace:</p>
+    <input type="text" id="palabra">
+    <button onclick="ingresoLetra()">Ingresar</button>
+
+    <script>
+
+        var ingresoLetra = function () {
+
+            var palabra = document.getElementById("palabra").value;
+            var frace = "";
+            var letra;
+            var fraceMasLarga;
+            var contador = 0;
+            var contadorMaximo = 0;
+
+
+            for (i = 0; i <= palabra.length; i++) {
+
+                //hola me llamo facundo
+
+                //alert(palabra.length)
+
+                letra = palabra.substring(i, i + 1);
+
+                if (letra != " ") {
+
+                    contador++ // 1 , 2 , 3 , 4
+                    frace = frace + letra; //frace = hola
+
+
+                } else {
+
+                    if (contador > contadorMaximo) { // 4 > 0 ? si
+
+                        contadorMaximo = contador;
+                        fraceMasLarga = frace;
+                        alert(contadorMaximo);
+                        alert(fraceMasLarga);
+
+                    }
+
+                    contador = 0;
+                    frace = "";
+
+                }
+
+
+            }
+
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>
