@@ -22,13 +22,15 @@
 
             var radio = parseInt(document.getElementById("radio").value);
 
+
+
             var circulo = {
 
                 getCirculo: function () {
 
-                    return "Radio: " + this.radio + 
+                    return "Radio: " + this.radio +
                     "Perimetro: " + 2*Math.PI * (this.radio) +
-                     "Area: " + Math.PI*(this.radio*this.radio);
+                    "Area: " + Math.PI*(this.radio*this.radio);
 
                 },
 
@@ -42,8 +44,8 @@
             }
 
             console.log(circulo);
-            libro.setLibro(radio);
-            alert(circulo.getCirculo);
+            circulo.setCirculo(radio);
+            alert(circulo.getCirculo());
 
         }
 

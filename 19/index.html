@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>BUEN DIA!!!</h1>
+
+    <script>
+
+        var A = [];
+        var B = [];
+
+        for (i = 0; i < 50; i++) {
+
+            A[i] = Math.random(100) * 10;
+            A[i] = Math.round(A[i]);
+
+        }
+
+        console.log(A);
+
+        for (i = 0; i < 20; i++) {
+
+            B[i] = Math.random(100) * 10;
+            B[i] = Math.round(B[i]);
+
+        }
+
+        console.log(B);
+
+        console.log("--VECTOR A ORDENADO--");
+
+        var soporte;
+
+        for (i = 0; i < 50; i++) {
+
+            for (k = 0; k < (50 - i); k++) {
+
+                if (A[k] > A[k + 1]) {
+
+                    soporte = A[k];
+                    A[k] = A[k + 1];
+                    A[k + 1] = soporte;
+
+                }
+
+            }
+
+        }
+
+        console.log(A);
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
