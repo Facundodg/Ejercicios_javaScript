@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>BUEN DIA!!!</h1>
+
+    <script>
+
+        var matriz = [[3],[6],[9],[12],[15]];
+        var vector = [];
+        var vector1 = [3,2,1];
+        var num;
+
+        console.log(matriz);
+
+        for (i = 0; i < 5; i++) {
+
+            for (j = 0; j < 1; j++) {
+
+                num = matriz[j,i];
+                vector[i] = num;
+
+            }
+
+        }
+
+        console.log("vector: "+vector);
+
+        var suma = parseInt(vector[0]) + parseInt(vector[4]);
+
+        vector[5] = suma;
+
+        vector.shift();
+
+        console.log("vector acomodado: " + vector);
+
+    </script>
+
+</body>
+
+</html>

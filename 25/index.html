@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset=utf-8 />
+<title>Obtener nombre y apellido de form </title>
+</head><body>
+<form id="form1" onsubmit="getFormValores()">
+Nombre: <input type="text" id="nombre" value="David"><br>
+Apellido: <input type="text" id="apellido" value="Beckham"><br>
+<input onclick="ingresar()" type="submit" value="Submit">
+</form>
+
+<script>
+
+    var ingresar = function(){
+
+        var nombre = document.getElementById("nombre").value;
+        var apellido = document.getElementById("apellido").value;
+
+        alert("Nombre:"+nombre + " y Apellido: " + apellido);
+
+    }
+
+</script>
+
+
+</body>
+</html>
